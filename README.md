@@ -1,4 +1,4 @@
-# search book using ISBN
+# search a book using ISBN
 
 ## description
 
@@ -8,8 +8,7 @@
 ## init
 
 1. edit config/setting.json to your data.
-```
-# config/setting.json
+<pre><code># config/setting.json
     "isbn": {
         "key": "your-key",
         "secret": "your-secret",
@@ -18,22 +17,19 @@
     "ma": {
         "appid": "your-appid"
     }
-```
+</code></pre>
 1. initalieze db
-```
-% sqlite3 db/queue.db < sql/queue.sql
+<pre><code>% sqlite3 db/queue.db < sql/queue.sql
 % sqlite3 db/book.db < sql/book.sql
-```
+</code></pre>
 
 ## usage
 
 * input
-```
-# console
+<pre><code># console
 % perl script/jonk-client.pl
-```
+</code></pre>
 * worker
-```
-# another console
+<pre><code># another console
 % perl script/jonk-worker.pl
-```
+</code></pre>
