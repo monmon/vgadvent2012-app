@@ -1,0 +1,16 @@
+{
+    "data": {
+        "db": "db/book.db"
+    },
+    "jonk": {
+        "db": "db/queue.db"
+    },
+    "isbn": {
+        "key": "your-key",
+        "secret": "your-secret",
+        "associate_tag": "your-associate_tag"
+    },
+    "ma": {
+        "appid": "your-appid"
+    }
+}
